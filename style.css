@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html {
+    font-family: 'DM Sans', sans-serif;
     Font-size: 18px;
 }
 
@@ -19,7 +22,7 @@ body {
 }
 
 .container {
-    width: 350px;
+    width: 300px;
     /* margin: 0 auto; */
 }
 
@@ -27,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(10, 79%, 65%);
+    background-color: rgb(236, 119, 95);
     color: #fff;
     border-radius: 10px;
     padding: 2px 20px;
@@ -55,6 +58,7 @@ body {
     padding: 10px 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+
 }
 .chart {
     font-size: 1rem;
@@ -91,3 +95,11 @@ h4 {
     text-align: center;margin-top: 30px; 
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 400px;
+    }
+}

@@ -16,6 +16,7 @@ makeRequest().then((datas) => {
     const days = [];
     const amounts = [];
     for(data of datas) {
+        
         days.push(data['day']);
         amounts.push(data['amount']);
     }
@@ -31,9 +32,7 @@ makeRequest().then((datas) => {
                     datasets: [{
                         label: 'Spending - Last 7 days',
                         data: amounts ,
-                        backgroundColor: [
-                            'hsl(186, 34%, 40%)',
-                        ],
+                        backgroundColor: 'rgb(236, 119, 95)',
                         borderRadius: 3,
                     }]
                 }
@@ -47,9 +46,7 @@ makeRequest().then((datas) => {
                     datasets: [{
                         label: '',
                         data: amounts ,
-                        backgroundColor: [
-                            'hsl(186, 34%, 60%)',
-                        ],
+                        backgroundColor: 'rgb(236, 119, 95)',
                         borderRadius: 3,
                     }]
                 }
